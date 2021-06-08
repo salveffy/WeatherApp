@@ -1,2 +1,6 @@
 # Project exclude paths
-/out/
+/libaries/
+/out/production/
+/src/sample/OpenWeatherApi.txt
+/src/META-INF/
+

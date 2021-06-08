@@ -1,9 +1,6 @@
 package sample;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -60,7 +57,16 @@ public class Controller {
             }
 
             if (!getUserCity.equals("")) {
-                String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=" + getUserCity + "&units=metric&appid=f8466e1c5979affa91440ace605a0964");
+                String getApi ="";
+                try {
+                    BufferedReader reader = new BufferedReader(new FileReader("C:/Users/salveffy/IdeaProjects/WeatherApp/src/sample/OpenWeatherApi.txt"));
+                    getApi = reader.readLine();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                String output = getUrlContent("http://api.openweathermap.org/data/2.5/weather?q=" + getUserCity + "&units=metric&appid=" + getApi);
                 System.out.println(output);
 
                 if (!output.isEmpty()) {
