@@ -18,7 +18,7 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="499.0" prefWidth="278.0" style="-fx-background-image:url('file:/D:/Downloads/img1.jpg');" GridPane.columnIndex="1">
+        <AnchorPane prefHeight="499.0" prefWidth="278.0" style="-fx-background-image:url('https://drive.google.com/uc?export=download&amp;id=1GTHtGXSwFzmYuTbgoEhDHylcvfsH-qAa');" GridPane.columnIndex="1">
             <children>
                 <Text fill="WHITE" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather App" textAlignment="CENTER" wrappingWidth="270.0">
                     <font>
