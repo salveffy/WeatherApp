@@ -8,7 +8,7 @@
 </p>
 
 ## Application launch
-- To run the application just run [WeatherApp.jar][WeatherApp]
+- To start the application just run [WeatherApp.jar][WeatherApp]
 
 [JavaFX]:https://gluonhq.com/products/javafx/
 [JSONInJava]:https://mvnrepository.com/artifact/org.json/json/20210307
